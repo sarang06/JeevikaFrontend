@@ -18,11 +18,35 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
-   
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
                 
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration
+    var firebaseConfig = {
+      // ...
 
+    ap2iKey: "AIzaSyASZVQndJTvksQoAsZti724cf1fU52ZmtM",
+    authDomain: "jeevika-2532066.firebaseapp.com",
+    databaseURL: "https://jeevika-2532066.firebaseio.com",
+    projectId: "jeevika-2532066",
+    storageBucket: "",
+    messagingSenderId: "809962495525",
+    appId: "1:809962495525:web:16997dbbfd316d3992e9cc"
+    };
 
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
 
 
